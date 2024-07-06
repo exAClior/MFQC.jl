@@ -1,10 +1,14 @@
 using MFQC
 using Documenter
+using DocumenterCitations
 
 DocMeta.setdocmeta!(MFQC, :DocTestSetup, :(using MFQC); recursive=true)
 
+bib = CitationBibliography(joinpath(@__DIR__,"src/reference.bib"),style=:authoryear)
+
 makedocs(;
     modules=[MFQC],
+    plugins = [bib],
     authors="Yusheng Zhao",
     sitename="MFQC.jl",
     format=Documenter.HTML(;
@@ -14,10 +18,13 @@ makedocs(;
     ),
     pages=[
         "Home" => "index.md",
+        "Theory" => "theory.md",
+        "Glossary" => "glossary.md",
+        "Suggested Readings and References" => "reference.md"
     ],
 )
 
 deploydocs(;
     repo="github.com/exAClior/MFQC.jl",
-    devbranch="main",
+    devbranch="master",
 )
