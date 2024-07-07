@@ -18,7 +18,8 @@ makedocs(;
     ),
     pages=[
         "Home" => "index.md",
-        "Theory" => "theory.md",
+        "Measurement-Free Scheme" => "schemes.md",
+        "Noise Model" => "noise.md",
         "Glossary" => "glossary.md",
         "Suggested Readings and References" => "reference.md"
     ],
