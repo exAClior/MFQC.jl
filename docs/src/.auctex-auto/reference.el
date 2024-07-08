@@ -1,5 +1,3 @@
-;; -*- lexical-binding: t; -*-
-
 (TeX-add-style-hook
  "reference"
  (lambda ()
@@ -15,6 +13,18 @@
     "Omanakuttan2024Fault"
     "Premakumar2019Decoherence"
     "gertler2021protecting"
-    "ercan2018measurement"))
+    "ercan2018measurement"
+    "beale2018coherence"
+    "marton2023coherent"
+    "rahn2002exact"
+    "fern2006generalized"
+    "Tomita2014Low"
+    "magesan2013modeling"
+    "puzzuoli2014tractable"
+    "gutierrez2013approximation"
+    "jouzdani2014fidelity"
+    "Darmawan2017Tensor"
+    "Suzuki2017Efficient"
+    "greenbaum2017modeling"))
  '(or :bibtex :latex))
 
