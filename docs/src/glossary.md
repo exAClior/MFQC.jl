@@ -29,3 +29,10 @@ code beyond single-qubit error models
 ## Coherent error source
 "systematic control noise, cross-talk, global external fields, and unwanted
 qubit–qubit interactions" Greenbaum
+
+## Topological code
+A code whose codewords form the ground-state or low-energy subspace of a
+(typically geometrically local) code Hamiltonian realizing a topological phase.
+A topological phase may be bosonic or fermionic, i.e., constructed out of
+underlying subsystems whose operators commute or anti-commute with each other,
+respectively. Unless otherwise noted, the phases discussed are bosonic.
