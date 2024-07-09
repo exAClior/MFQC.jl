@@ -1,19 +1,44 @@
-# Study of Coherent Error 
+# Survey on Coherent Error  
 
-In order to understand how well an error correction code guards against noise,
-simulation is necessary. The exponentially growing dimension of Hilbert space
-makes such simulation untenable. Luckily for one type of noise, incoherent
-noise, this is amenable. You may convert the noise into a depolarizing channel.
-Under such conversion, all gates in the circuit are clifford, and there are well
-known polynomial time simulation algorithm for such circuits. The problem is
-with coherent noise.
+Simulation with realistic nosie is necessary for designing better error
+correction code. Noise can be broken down into two categories, incoherent noise
+coherent noise. [Incoherent noise is stochastic while coherent noise is
+unitary](https://quantumcomputing.stackexchange.com/a/34615/5116). Amplitude
+damping, depolarizing, and phase damping are all examples of incoherent noise.
+Imperfect control in qubit gate implementation is an example of coherent noise.
+Quantum circuit with depolarizing noise can be efficiently simulated thanks to
+[Gottesman-Knill
+Theorem](https://en.wikipedia.org/wiki/Gottesman%E2%80%93Knill_theorem).
+Therefore the nosie threshold is best understood in this regime. The study of
+the other noise faces the challange of exponentially increasing simulation cost.
+In this survey, we focus on coheret noise.
+
+## Summary
+Three approaches exist for the study of coherent noise.
+- Direct simulation with coherent noise. 
+- Verify deviation of coherent noise from depolarizing noise is small on logical
+  qubit level and then simulate with Clifford-based methods.
+- Analytic study of coherent noise. (Very few)
+
 
 Many paper considers quantum memory and not quantum computing.
-
 The study was obviously code specific. Much of the study was target towards
 either simple repetition code or surface code. The former because it was small
 and simple. The later because it was easy to realize and have high noise
 threshold. See citation (9-11) in [^bravyi].
+
+## Direct Simulation Approach
+
+
+## Approximate with Depolarizing Approach 
+
+
+## Analytic Study
+
+Links [approximate quantum error
+correction](https://link.springer.com/article/10.1023/A:1019653202562) to
+surface code [^zhao]
+
 
 From the difficulty there are two school of thoughts. The first is to come up
 with better plans on how to simulate the general, coherent error. The second is
@@ -80,9 +105,6 @@ We simulate the circuits by sampling CSP channels according to quasiprobability
 distributions, which are obtained from the decompositions [15,16].""
 
 
-[^zhao] one of the very few analytical study of coherent noise. Links with
-surface code under coherent noise with approximate quantum error correction
-code.
 
 [^venn2023] follow up to the [^venn] paper, estimates error threshold with the
 help of mapping error correction code to majorana fermion.
@@ -99,6 +121,8 @@ Analyzes a slightly different kind of coherent error with FLO approach.
 "related the phases of surface-code QEC for coherent and incoherent errors to
 entanglement phases." [^Behrends] follow up with FLO.
 
+[^huang] needs to summarize
+
 [^beale]: [beale2018coherence](@cite)
 [^marton]: [marton2023coherent](@cite)
 [^rahn]: [rahn2002exact](@cite)
@@ -112,17 +136,15 @@ entanglement phases." [^Behrends] follow up with FLO.
 [^Suzuki]: [Suzuki2017Efficient](@cite)
 [^greenbaum]:[greenbaum2017modeling](@cite)
 [^bravyi]: [bravyi2018correcting](@cite)
-[^huang]: [huang2019performance](@cite)
 [^iverson]: [iverson2020coherence](@cite)
 [^venn]: [venn2020error](@cite)
 [^Hakkaku]: [Hakkaku2021Sampling](@cite)
 [^zhao]: [zhao2021analytic](@cite)
 [^venn2023]: [venn2023coherent](@cite)
-
 [^hashim]: [hashim2022benchmarking](@cite)
-
 [^pataki]: [pataki2024coherent](@cite)
-[^Behrends]: [Behrends2024Sufrace](@cite)
+[^Behrends]: [Behrends2024Surface](@cite)
+[^huang]: [huang2019performance](@cite)
 
 First estimation of surface code threshold.
 Dennis, E., Kitaev, A., Landahl, A. & Preskill, J. Topological quantum memory. J. Math. Phys. 43, 4452–4505 (2002).

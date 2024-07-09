@@ -34,6 +34,7 @@
     "zhao2021analytic"
     "venn2023coherent"
     "hashim2022benchmarking"
-    "pataki2024coherent"))
+    "pataki2024coherent"
+    "Behrends2024Surface"))
  '(or :bibtex :latex))
 
