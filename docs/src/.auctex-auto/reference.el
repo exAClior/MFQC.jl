@@ -14,7 +14,6 @@
     "Premakumar2019Decoherence"
     "gertler2021protecting"
     "ercan2018measurement"
-    "beale2018coherence"
     "marton2023coherent"
     "rahn2002exact"
     "fern2006generalized"
@@ -25,6 +24,16 @@
     "jouzdani2014fidelity"
     "Darmawan2017Tensor"
     "Suzuki2017Efficient"
-    "greenbaum2017modeling"))
+    "greenbaum2017modeling"
+    "bravyi2018correcting"
+    "beale2018coherence"
+    "huang2019performance"
+    "iverson2020coherence"
+    "venn2020error"
+    "Hakkaku2021Sampling"
+    "zhao2021analytic"
+    "venn2023coherent"
+    "hashim2022benchmarking"
+    "pataki2024coherent"))
  '(or :bibtex :latex))
 
