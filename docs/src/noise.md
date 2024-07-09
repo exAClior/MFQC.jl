@@ -142,8 +142,13 @@ Experimental paper that characterizes error model with randomized compiling
 [^huang]: [huang2019performance](@cite)
 
 <!-- pauli transfer matrix, which non-trivial code is doable. more conrete. -->
-Toric code was analyzed using this formalism in [^iverson]
-<!-- how large of code can we simulate: how large how accurate in general methods approach  -->
-<!-- is coherent error similar to incoherent error upto a constant in statistical limit -->
+Toric code was analyzed using this formalism in [^iverson] Take a closer look at
+greenbaum, why they don't work for topological code.
+
+<!-- how large of code can we simulate: how large how accurate in general
+methods approach --> 
+
+<!-- is coherent error similar to incoherent error upto a
+constant in statistical limit -->
 
 <!-- focus on the majorana paper again -->
