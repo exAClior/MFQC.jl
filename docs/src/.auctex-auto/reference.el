@@ -40,6 +40,10 @@
     "aliferis2005quantum"
     "Beale2020EfficientlyCL"
     "Wagner2023"
-    "liu2023exact"))
+    "liu2023exact"
+    "Dennis2001TopologicalQM"
+    "Wang2002ConfinementHT"
+    "Katzgraber2009ErrorTF"
+    "Chubb2018StatisticalMM"))
  '(or :bibtex :latex))
 

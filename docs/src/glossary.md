@@ -36,3 +36,10 @@ A code whose codewords form the ground-state or low-energy subspace of a
 A topological phase may be bosonic or fermionic, i.e., constructed out of
 underlying subsystems whose operators commute or anti-commute with each other,
 respectively. Unless otherwise noted, the phases discussed are bosonic.
+
+## 3D Color Code
+Three-dimensional (3D) color codes have advantages for fault-tolerant quantum
+computing, such as protected quantum gates with relatively low overhead and
+robustness against imperfect measurement of error syndromes: Three-dimensional
+color code thresholds via statistical-mechanical mapping
+
