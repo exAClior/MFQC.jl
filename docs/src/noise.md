@@ -1,3 +1,8 @@
+# Previously
+
+Threshold for markovian and nonlocal quantum gates were derived previously
+[^aliferis]
+
 # Survey on Coherent Error
 
 Simulation with realistic nosie is necessary for designing better error
@@ -89,35 +94,47 @@ code decohere independent coherent errors." [^zhao]
 
 ## Analytic Study
 
-Pauli Transfer Matrix was derived for repeition code to analytically analyze the
-amount of coherent error vs incoherent error on the level of logic qubit.
-[^greenbaum] There was indeed coherent error and "degree of coherence depends on
-the code distance and concatenation level.
+In 2016, Pauli Transfer Matrix was derived for repeition code to analytically
+analyze the amount of coherent error vs incoherent error on the level of logic
+qubit. [^greenbaum] There was indeed coherent error and "degree of coherence
+depends on the code distance and concatenation level.
 
-Using Pauli Transfer Matrix, logical qubit channel was studied under many
-different codes.[^huang]
+In 2019, Using Pauli Transfer Matrix, logical qubit channel was studied under
+many five-qubit, Steane, Shor, surface code.[^huang]
 
-"The coherence of the logical channel becomes strongly suppressed as the block
-length of the quantum error-correcting code increases, assuming that the noise
-is sufficiently weak and sufficiently weakly correlated." "To decode, one
-measures the error syndrome, and then applies a recovery operation conditioned
-on the syndrome. For a large code, many different syndromes are possible, and
-only the errors which are projected onto the same syndrome value can interfere
-constructively, while errors projected onto different syndrome values add
-stochastically."[^iverson]
+In 2020, Obtaining different error syndrom by measurement may changes the effective
+logical channel. Studying the degeneracy collects equivalent logical channel
+hence improves simualtion [^beal2020].
 
-Answers the question "how dose the coherency of the noise channel affect the
-logical diagonal terms in (Pauli Transfer Matrix) and the success probability of
-error corrections."[^zhao] I.e, the toric code becomes an [approximate quantum
-error correction](https://link.springer.com/article/10.1023/A:1019653202562)
-which recovers the logical state with $\epsilon$ infidelity with the true logic
+In 2020, analyzed toric code. "The coherence of the logical channel becomes
+strongly suppressed as the block length of the quantum error-correcting code
+increases, assuming that the noise is sufficiently weak and sufficiently weakly
+correlated." "To decode, one measures the error syndrome, and then applies a
+recovery operation conditioned on the syndrome. For a large code, many different
+syndromes are possible, and only the errors which are projected onto the same
+syndrome value can interfere constructively, while errors projected onto
+different syndrome values add stochastically."[^iverson]
+
+In 2023, Answers the question "how dose the coherency of the noise channel
+affect the logical diagonal terms in (Pauli Transfer Matrix) and the success
+probability of error corrections."[^zhao] I.e, the toric code becomes an
+[approximate quantum error
+correction](https://link.springer.com/article/10.1023/A:1019653202562) which
+recovers the logical state with $\epsilon$ infidelity with the true logic
 state[^zhao].
+
+In 2023, five-qubit code performance including measurment, decoding was studied
+[^liu2023]. I am not clear what they meant in [^Wagner2023] about each syndrom
+correspond to a different logical map. However, we are not sure if this
+limitation manifests itself on measurement free schemes.
+
+
+<!-- pauli transfer matrix, which non-trivial code is doable. more conrete. -->
+
 
 
 Experimental paper that characterizes error model with randomized compiling
 [^hashim].
-
-
 [^beale]: [beale2018coherence](@cite)
 [^marton]: [marton2023coherent](@cite)
 [^rahn]: [rahn2002exact](@cite)
@@ -140,10 +157,11 @@ Experimental paper that characterizes error model with randomized compiling
 [^pataki]: [pataki2024coherent](@cite)
 [^Behrends]: [Behrends2024Surface](@cite)
 [^huang]: [huang2019performance](@cite)
+[^aliferis]: [aliferis2005quantum](@cite)
+[^beal2020]: [Beale2020EfficientlyCL](@cite)
+[^Wagner2023]: [Wagner2023](@cite)
+[^liu2023]: [liu2023exact](@cite)
 
-<!-- pauli transfer matrix, which non-trivial code is doable. more conrete. -->
-Toric code was analyzed using this formalism in [^iverson] Take a closer look at
-greenbaum, why they don't work for topological code.
 
 <!-- how large of code can we simulate: how large how accurate in general
 methods approach --> 
@@ -152,3 +170,15 @@ methods approach -->
 constant in statistical limit -->
 
 <!-- focus on the majorana paper again -->
+
+
+# Quotes
+"toric code subject to such independent coherent noise, and for minimal- weight
+decoding, the logical channel after error correction becomes increasingly
+incoherent as the length of the code increases, provided the noise strength
+decays inversely with the code distance" [^iverson]. 
+
+"our result does not show that the coherence of the logical channel is
+suppressed in the more physically relevant case where the noise strength is held
+constant as the code block grows, and we recount the difficulties that prevented
+us from extending the result to that case" [^iverson].

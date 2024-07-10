@@ -36,6 +36,10 @@
     "hashim2022benchmarking"
     "pataki2024coherent"
     "Behrends2024Surface"
-    "Kueng2016Comparing"))
+    "Kueng2016Comparing"
+    "aliferis2005quantum"
+    "Beale2020EfficientlyCL"
+    "Wagner2023"
+    "liu2023exact"))
  '(or :bibtex :latex))
 
