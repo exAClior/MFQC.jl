@@ -93,18 +93,17 @@ Then, they made a conclusion that the syndrome measurements of the stabilizer
 code decohere independent coherent errors." [^zhao]
 
 ## Analytic Study
+Progress in this subsection is mainly due to the 2002 paper [^rahn]. In 2016,
+focusing on how noise scales with code distance and concatenation level, work
+for repeition code to analytically analyze the amount of coherent error vs
+incoherent error on the level of logic qubit. [^greenbaum]
 
-In 2016, Pauli Transfer Matrix was derived for repeition code to analytically
-analyze the amount of coherent error vs incoherent error on the level of logic
-qubit. [^greenbaum] There was indeed coherent error and "degree of coherence
-depends on the code distance and concatenation level.
+In 2019, logical qubit channel was studied under many five-qubit, Steane, Shor,
+surface code but measurement was not considered.[^huang]
 
-In 2019, Using Pauli Transfer Matrix, logical qubit channel was studied under
-many five-qubit, Steane, Shor, surface code.[^huang]
-
-In 2020, Obtaining different error syndrom by measurement may changes the effective
-logical channel. Studying the degeneracy collects equivalent logical channel
-hence improves simualtion [^beal2020].
+In 2020, Obtaining different error syndrom by measurement may changes the
+effective logical channel. Studying the degeneracy collects equivalent logical
+channel hence improves simualtion [^beal2020].
 
 In 2020, analyzed toric code. "The coherence of the logical channel becomes
 strongly suppressed as the block length of the quantum error-correcting code
