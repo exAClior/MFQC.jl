@@ -1,7 +1,7 @@
 # Previously
 
 Threshold for markovian and nonlocal quantum gates were derived previously
-[^aliferis]
+[^aliferis2005]
 
 # Survey on Coherent Error
 
@@ -29,7 +29,7 @@ Three approaches exist for the study of coherent noise.
 Many consider quantum memory and not quantum computing. Focus was on simple
 code, i.e repetition code, or surface code. The former because it was small
 therefore managable in simulation. The later because it was easy to realize
-experimentally and have high noise threshold. See citation (9-11) in [^bravyi].
+experimentally and have high noise threshold. See citation (9-11) in [^bravyi2018].
 
 ## Direct Simulation Approach
 
@@ -38,7 +38,7 @@ experimentally and have high noise threshold. See citation (9-11) in [^bravyi].
 PEPS encoded physical qubit state was used to do non-Clifford simulation.
 However, the size of result is still limited to 153 data qubits and perfect
 measurement was assumed. In case of concatenated code, this is far from
-sufficient.[^Darmawan]
+sufficient.[^Darmawan2017]
 
 ### Mapping to Statistical Model
 
@@ -50,32 +50,32 @@ phase transition in the Ising Model.
 Almost concurrently, a work appeared on flawless measurement connecting to random-bond
 Ising Model was studied[^Wang2002]
 
-In 2009, work was done on topological color code [^Katzgraber].
+In 2009, work was done on topological color code [^Katzgraber2009].
 
 In 2018, partially correlated noise was considered [^Chubb2018]. Why doesn't
 any one mention the code size?
 
 By"map(ping) the complete evolution after one quantum error correction cycle
 onto the problem of computing correlation functions of a two-dimensional Ising
-model with boundary fields", [^jouzdani] tries to find the noise threshold.
+model with boundary fields", [^jouzdani2014] tries to find the noise threshold.
 However, they limit the error and gate to nearest neighbor.
 
 ### Mapping to Fermionic Linear Operator
 
 Convertting repetition code with coherent noise into matchgate circuit enables
-efficient simulation. [^Suzuki] [^bravyi] used FLO for simulation following
-suzuki. [^venn] is the follow up of Bravyi's work. [^venn2023] follow up to the
-[^venn] paper, estimates error threshold with the help of mapping error
+efficient simulation. [^Suzuki2017] [^bravyi2018] used FLO for simulation following
+suzuki. [^venn2020] is the follow up of Bravyi's work. [^venn2023] follow up to the
+[^venn2020] paper, estimates error threshold with the help of mapping error
 correction code to majorana fermion. Working as quantum memory with readout
-error, appears similar to venn's work [^marton]. Analyzes a slightly different
-kind of coherent error with FLO approach [^pataki]. "related the phases of
+error, appears similar to venn's work [^marton2023]. Analyzes a slightly different
+kind of coherent error with FLO approach [^pataki2024]. "related the phases of
 surface-code QEC for coherent and incoherent errors to entanglement phases."
-[^Behrends] follow up with FLO.
+[^Behrends2024] follow up with FLO.
 
 "The central idea is to decompose (possibly non-Clifford) noise channels into
 the sum of completely stabilizer preserving (CSP) channels. We simulate the
 circuits by sampling CSP channels according to quasiprobability distributions,
-which are obtained from the decompositions." [^Hakkaku]
+which are obtained from the decompositions." [^Hakkaku2021]
 
 ## Approximate with Depolarizing Approach 
 
@@ -84,22 +84,22 @@ Although the gate implementing Pauli Twirling may also have coherent error. This
 makes the error channel after twirling not exactly a simple depolarizing
 channel. A good estimation of such noise channel, original coherent nosie +
 coherent noise in Pauli Twirling, into mixed depolarizing channel was proposed
-by [^magesan]. They simulate with monte carlo sampling. This work has a follow
-up, not sure what's the contribution [^puzzuoli]. A following work expands the
+by [^magesan2013]. They simulate with monte carlo sampling. This work has a follow
+up, not sure what's the contribution [^puzzuoli2014]. A following work expands the
 noise model, including random insertion of one-qubit gate and measurement, which
-is simulatable under this framekwork [^gutierrez]. A follow up was done in
-[^Tomita] for different code and different noise model.
+is simulatable under this framekwork [^gutierrez2013]. A follow up was done in
+[^Tomita2014] for different code and different noise model.
 
 Deviation of coherent error from Pauli Channel on surface code was studied
-[^bravyi]. The noise threshold was accurate with the approximation but the
+[^bravyi2018]. The noise threshold was accurate with the approximation but the
 logical error was under-estimated.
 
-Measurement decoheres coherent error and can model as Pauli noise.[^beale]
+Measurement decoheres coherent error and can model as Pauli noise.[^beale2018]
 "after perfect syndrome measurement, the syndrome averaged logical off-diagonal
 terms of the error channel decays exponentially with respect to the code
 distance, and the decay is faster than that from the logical diagonal terms.
 Then, they made a conclusion that the syndrome measurements of the stabilizer
-code decohere independent coherent errors." [^zhao]
+code decohere independent coherent errors." [^zhao2021]
 
 ## Analytic Study
 
@@ -109,20 +109,20 @@ Development in this regime was largely due to the following method.
 To approximate threshold for concatenated code, an effective quantum channel
 acting on the logical qubit(s) was used to study the dynamics of diagonal noise,
 each physical qubit under symmetric depolarizing channel, acting on all physical
-qubits [^rahn]. This approach was later generalized to working for arbitrary
-noise in [^fern]. We know it as the "Pauli Transfer Matrix"[^iverson]. "However,
+qubits [^rahn2002]. This approach was later generalized to working for arbitrary
+noise in [^fern2006]. We know it as the "Pauli Transfer Matrix"[^iverson2020]. "However,
 this technique is not applicable to topological codes, which are more feasible
-in practical experiments"[^Suzuki] Cannot approximate non-Clifford noise with
+in practical experiments"[^Suzuki2017] Cannot approximate non-Clifford noise with
 Clifford channel which guarantees efficient simulation. Furthermore, the
 threshold is higher than acutal one due to ignoring encoding and decoding error.
 
-Progress in this subsection is mainly due to the 2002 paper [^rahn]. In 2016,
+Progress in this subsection is mainly due to the 2002 paper [^rahn2002]. In 2016,
 focusing on how noise scales with code distance and concatenation level, work
 for repeition code to analytically analyze the amount of coherent error vs
-incoherent error on the level of logic qubit. [^greenbaum]
+incoherent error on the level of logic qubit. [^greenbaum2017]
 
 In 2019, logical qubit channel was studied under many five-qubit, Steane, Shor,
-surface code but measurement was not considered.[^huang]
+surface code but measurement was not considered.[^huang2019]
 
 In 2020, Obtaining different error syndrom by measurement may changes the
 effective logical channel. Studying the degeneracy collects equivalent logical
@@ -135,15 +135,15 @@ correlated." "To decode, one measures the error syndrome, and then applies a
 recovery operation conditioned on the syndrome. For a large code, many different
 syndromes are possible, and only the errors which are projected onto the same
 syndrome value can interfere constructively, while errors projected onto
-different syndrome values add stochastically."[^iverson]
+different syndrome values add stochastically."[^iverson2020]
 
 In 2023, Answers the question "how dose the coherency of the noise channel
 affect the logical diagonal terms in (Pauli Transfer Matrix) and the success
-probability of error corrections."[^zhao] I.e, the toric code becomes an
+probability of error corrections."[^zhao2021] I.e, the toric code becomes an
 [approximate quantum error
 correction](https://link.springer.com/article/10.1023/A:1019653202562) which
 recovers the logical state with $\epsilon$ infidelity with the true logic
-state[^zhao].
+state[^zhao2021].
 
 In 2023, five-qubit code performance including measurment, decoding was studied
 [^liu2023]. I am not clear what they meant in [^Wagner2023] about each syndrom
@@ -153,37 +153,37 @@ limitation manifests itself on measurement free schemes.
 
 
 Experimental paper that characterizes error model with randomized compiling
-[^hashim].
+[^hashim2022].
 
-[^beale]: [beale2018coherence](@cite)
-[^marton]: [marton2023coherent](@cite)
-[^rahn]: [rahn2002exact](@cite)
-[^fern]: [fern2006generalized](@cite)
-[^Tomita]: [Tomita2014Low](@cite)
-[^magesan]: [magesan2013modeling](@cite)
-[^puzzuoli]: [puzzuoli2014tractable](@cite)
-[^gutierrez]: [gutierrez2013approximation](@cite)
-[^jouzdani]: [jouzdani2014fidelity](@cite)
-[^Darmawan]: [Darmawan2017Tensor](@cite)
-[^Suzuki]: [Suzuki2017Efficient](@cite)
-[^greenbaum]:[greenbaum2017modeling](@cite)
-[^bravyi]: [bravyi2018correcting](@cite)
-[^iverson]: [iverson2020coherence](@cite)
-[^venn]: [venn2020error](@cite)
-[^Hakkaku]: [Hakkaku2021Sampling](@cite)
-[^zhao]: [zhao2021analytic](@cite)
+[^beale2018]: [beale2018coherence](@cite)
+[^marton2023]: [marton2023coherent](@cite)
+[^rahn2002]: [rahn2002exact](@cite)
+[^fern2006]: [fern2006generalized](@cite)
+[^Tomita2014]: [Tomita2014Low](@cite)
+[^magesan2013]: [magesan2013modeling](@cite)
+[^puzzuoli2014]: [puzzuoli2014tractable](@cite)
+[^gutierrez2013]: [gutierrez2013approximation](@cite)
+[^jouzdani2014]: [jouzdani2014fidelity](@cite)
+[^Darmawan2017]: [Darmawan2017Tensor](@cite)
+[^Suzuki2017]: [Suzuki2017Efficient](@cite)
+[^greenbaum2017]:[greenbaum2017modeling](@cite)
+[^bravyi2018]: [bravyi2018correcting](@cite)
+[^iverson2020]: [iverson2020coherence](@cite)
+[^venn2020]: [venn2020error](@cite)
+[^Hakkaku2021]: [Hakkaku2021Sampling](@cite)
+[^zhao2021]: [zhao2021analytic](@cite)
 [^venn2023]: [venn2023coherent](@cite)
-[^hashim]: [hashim2022benchmarking](@cite)
-[^pataki]: [pataki2024coherent](@cite)
-[^Behrends]: [Behrends2024Surface](@cite)
-[^huang]: [huang2019performance](@cite)
-[^aliferis]: [aliferis2005quantum](@cite)
+[^hashim2022]: [hashim2022benchmarking](@cite)
+[^pataki2024]: [pataki2024coherent](@cite)
+[^Behrends2024]: [Behrends2024Surface](@cite)
+[^huang2019]: [huang2019performance](@cite)
+[^aliferis2005]: [aliferis2005quantum](@cite)
 [^beal2020]: [Beale2020EfficientlyCL](@cite)
 [^Wagner2023]: [Wagner2023](@cite)
 [^liu2023]: [liu2023exact](@cite)
 [^Dennis2001]: [Dennis2001TopologicalQM](@cite)
 [^Wang2002]: [Wang2002ConfinementHT](@cite)
-[^Katzgraber]: [Katzgraber2009ErrorTF](@cite)
+[^Katzgraber2009]: [Katzgraber2009ErrorTF](@cite)
 [^Chubb2018]: [Chubb2018StatisticalMM](@cite)
 [^kueng2016]: [Kueng2016Comparing](@cite)
 
@@ -192,11 +192,11 @@ methods approach -->
 What kind of specific noise model, what is the motivation
 
 TensorNetwork: 153 physical qubit, $\mathcal{2^{\sqrt{n}}}$ for $n$ physical
-qubit. [^Darmawan]
+qubit. [^Darmawan2017]
 
-Matchgate, FLO: 2401 qubits, code distance 49, surface code. [^bravyi]
+Matchgate, FLO: 2401 qubits, code distance 49, surface code. [^bravyi2018]
 
-Analytic Method: they obtained a scaling. [^iverson]
+Analytic Method: they obtained a scaling. [^iverson2020]
 
 Approximate with Pauli Noise is code specific and they don't relate to code size
 directly. (In what situation can we do this approximation)
@@ -227,12 +227,12 @@ On the other hand, for surface code at least,
 "toric code subject to such independent coherent noise, and for minimal- weight
 decoding, the logical channel after error correction becomes increasingly
 incoherent as the length of the code increases, provided the noise strength
-decays inversely with the code distance" [^iverson]. 
+decays inversely with the code distance" [^iverson2020]. 
 
 "our result does not show that the coherence of the logical channel is
 suppressed in the more physically relevant case where the noise strength is held
 constant as the code block grows, and we recount the difficulties that prevented
-us from extending the result to that case" [^iverson].
+us from extending the result to that case" [^iverson2020].
 
 # Questions
 
