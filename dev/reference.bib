@@ -1,0 +1,483 @@
+@article{Schindler2011Experimental,
+author = {Philipp Schindler  and Julio T. Barreiro  and Thomas Monz  and Volckmar Nebendahl  and Daniel Nigg  and Michael Chwalla  and Markus Hennrich  and Rainer Blatt },
+title = {Experimental Repetitive Quantum Error Correction},
+journal = {Science},
+volume = {332},
+number = {6033},
+pages = {1059-1061},
+year = {2011},
+doi = {10.1126/science.1203329},
+URL = {https://www.science.org/doi/abs/10.1126/science.1203329},
+eprint = {https://www.science.org/doi/pdf/10.1126/science.1203329},
+abstract = {An error correction algorithm is applied multiple times to a small quantum system. The computational potential of a quantum processor can only be unleashed if errors during a quantum computation can be controlled and corrected for. Quantum error correction works if imperfections of quantum gate operations and measurements are below a certain threshold and corrections can be applied repeatedly. We implement multiple quantum error correction cycles for phase-flip errors on qubits encoded with trapped ions. Errors are corrected by a quantum-feedback algorithm using high-fidelity gate operations and a reset technique for the auxiliary qubits. Up to three consecutive correction cycles are realized, and the behavior of the algorithm for different noise environments is analyzed.}}
+
+@article{divincenzo2007effective,
+  title={Effective fault-tolerant quantum computation with slow measurements},
+  author={DiVincenzo, David P and Aliferis, Panos},
+  journal={Physical review letters},
+  volume={98},
+  number={2},
+  pages={020501},
+  year={2007},
+  publisher={APS}
+}
+
+@article{paz2010fault,
+  title={On fault-tolerance with noisy and slow measurements},
+  author={Paz-Silva, Gerardo A and Brennen, Gavin K and Twamley, Jason},
+  journal={arXiv preprint arXiv:1002.1536},
+  year={2010}
+}
+
+@inproceedings{Boykin2004Fault,
+author = {V. P. Roychowdhury and P. Boykin and F. Vatan and T. Mor},
+booktitle = {2004 International Conference on Dependable Systems and Networks},
+title = {Fault Tolerant Computation on Ensemble Quantum Computers},
+year = {2004},
+volume = {},
+issn = {},
+pages = {157},
+abstract = {In ensemble (or bulk) quantum computation, all computations are performed on an ensemble of computers rather than on a single computer. Measurements of qubits in an individual computer cannot be performed; instead, only expectation values (over the complete ensemble of computers) can be measured. As a result of this limitation on the model of computation, many algorithms cannot be processed directly on such computers, and must be modified. We provide modification of the fault tolerant quantum computation protocols to enable processing on ensemble quantum computers.},
+keywords = {null},
+doi = {10.1109/DSN.2004.1311886},
+url = {https://doi.ieeecomputersociety.org/10.1109/DSN.2004.1311886},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+month = {jul}
+}
+
+@inproceedings{aharonov1997fault,
+  title={Fault-tolerant quantum computation with constant error},
+  author={Aharonov, Dorit and Ben-Or, Michael},
+  booktitle={Proceedings of the twenty-ninth annual ACM symposium on Theory of computing},
+  pages={176--188},
+  year={1997}
+}
+
+@article{peres1998quantum,
+  title={Quantum disentanglement and computation},
+  author={Peres, Asher},
+  journal={Superlattices and Microstructures},
+  volume={23},
+  number={3-4},
+  pages={373--379},
+  year={1998},
+  publisher={Elsevier}
+}
+
+@article{crow2016improved,
+  title={Improved error thresholds for measurement-free error correction},
+  author={Crow, Daniel and Joynt, Robert and Saffman, Mark},
+  journal={Physical review letters},
+  volume={117},
+  number={13},
+  pages={130503},
+  year={2016},
+  publisher={APS}
+}
+
+@article{cruikshank2017high,
+  title={High-threshold low-overhead fault-tolerant classical computation and the replacement of measurements with unitary quantum gates},
+  author={Cruikshank, Benjamin and Jacobs, Kurt},
+  journal={Physical Review Letters},
+  volume={119},
+  number={3},
+  pages={030503},
+  year={2017},
+  publisher={APS}
+}
+@article{Omanakuttan2024Fault,
+  title = {Fault-Tolerant Quantum Computation Using Large Spin-Cat Codes},
+  author = {Omanakuttan, Sivaprasad and Buchemmavari, Vikas and Gross, Jonathan A. and Deutsch, Ivan H. and Marvian, Milad},
+  journal = {PRX Quantum},
+  volume = {5},
+  issue = {2},
+  pages = {020355},
+  numpages = {30},
+  year = {2024},
+  month = {Jun},
+  publisher = {American Physical Society},
+  doi = {10.1103/PRXQuantum.5.020355},
+  url = {https://link.aps.org/doi/10.1103/PRXQuantum.5.020355}
+}
+
+@phdthesis{Premakumar2019Decoherence,
+author={Premakumar,Vickram N.},
+year={2019},
+month={2019},
+title={Decoherence and Error Correction: Topics in Quantum Computing},
+journal={ProQuest Dissertations and Theses},
+pages={127},
+note={Copyright - Database copyright ProQuest LLC; ProQuest does not claim copyright in the individual underlying works; Last updated - 2023-06-21},
+abstract={This dissertation investigates problems concerning decoherence and error correction in quantum computer architectures. First we discuss Evanescent-Wave Johnson Noise as a decoherence mechanism. A classical analogy between the Green's functions relevant to describing this noise is used in order to simplify calculations and present results focusing on geometries relevant for small devices. We apply this to model qubit decoherence in the presence of EWJN showing that it could be the dominant noise mechanism for spin qubits in magnetic fields around 1T. We then turn our attention to characterizing spatial noise correlations in existing qubit devices and strategies to optimize circuit design using correlation information. The concept can be viewed as a Ramsey experiment conducted in a two-dimensional product qubit subspace, allowing us to use many single qubit noise spectroscopy techniques to measure spatial correlations. This is a generalization of decoherence-free subspaces, which have been studied substantially as passive error correction. Next, we describe how to use knowledge of the correlations to choose the best circuit out of many candidates for doing a particular task. The proposed metrics produce predictions on which circuit will result in the highest fidelity under a given noise model, which we verify using numerical simulations. We demonstrate that a known procedure for coherent-error correction can be made fault tolerant by insisting that C_kNOT gates occur in a single time step. Justification for the simulation of these gates via classical ancillas combined with the Gottesman-Knill theorem is presented by proving that the ancilla and data registers are separable before correction operations. We produce a threshold for an example code on the same order of magnitude as previous work, but with a refined implementation that is fault tolerant. We continue with the use of redundant syndrome extraction in stabilizer codes to circumvent majority-rules decision making for conditional operations. We produce simulations comparing the two schemes across a range of models characterized by the independent error rates on qubits and measurements. The most robust realization of this scheme for several codes resemble balanced incomplete block designs, and we explore this correspondence towards generating new codes from designs.},
+keywords={Error-correction; Noise; Quantum Computing; Physics; Quantum physics; Condensed matter physics; 0605:Physics; 0599:Quantum physics; 0611:Condensed matter physics},
+isbn={9781687929648},
+school={Unknown},
+language={English},
+url={https://www.proquest.com/dissertations-theses/decoherence-error-correction-topics-quantum/docview/2305844718/se-2},
+}
+
+@article{gertler2021protecting,
+  title={Protecting a bosonic qubit with autonomous quantum error correction},
+  author={Gertler, Jeffrey M and Baker, Brian and Li, Juliang and Shirol, Shruti and Koch, Jens and Wang, Chen},
+  journal={Nature},
+  volume={590},
+  number={7845},
+  pages={243--248},
+  year={2021},
+  publisher={Nature Publishing Group UK London}
+}
+
+@article{ercan2018measurement,
+  title={Measurement-free implementations of small-scale surface codes for quantum-dot qubits},
+  author={Ercan, H Ekmel and Ghosh, Joydip and Crow, Daniel and Premakumar, Vickram N and Joynt, Robert and Friesen, Mark and Coppersmith, SN},
+  journal={Physical Review A},
+  volume={97},
+  number={1},
+  pages={012318},
+  year={2018},
+  publisher={APS}
+}
+
+
+@article{marton2023coherent,
+  title={Coherent errors and readout errors in the surface code},
+  author={Marton, Aron and Asboth, Janos K},
+  journal={Quantum},
+  volume={7},
+  pages={1116},
+  year={2023},
+  publisher={Verein zur F{\"o}rderung des Open Access Publizierens in den Quantenwissenschaften}
+}
+
+@article{rahn2002exact,
+  title={Exact performance of concatenated quantum codes},
+  author={Rahn, Benjamin and Doherty, Andrew C and Mabuchi, Hideo},
+  journal={Physical Review A},
+  volume={66},
+  number={3},
+  pages={032304},
+  year={2002},
+  publisher={APS}
+}
+
+@article{fern2006generalized,
+  title={Generalized performance of concatenated quantum codes—a dynamical systems approach},
+  author={Fern, Jesse and Kempe, Julia and Simic, Slobodan N and Sastry, Shankar},
+  journal={IEEE transactions on automatic control},
+  volume={51},
+  number={3},
+  pages={448--459},
+  year={2006},
+  publisher={IEEE}
+}
+
+@article{Tomita2014Low,
+  title = {Low-distance surface codes under realistic quantum noise},
+  author = {Tomita, Yu and Svore, Krysta M.},
+  journal = {Phys. Rev. A},
+  volume = {90},
+  issue = {6},
+  pages = {062320},
+  numpages = {15},
+  year = {2014},
+  month = {Dec},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevA.90.062320},
+  url = {https://link.aps.org/doi/10.1103/PhysRevA.90.062320}
+}
+
+@article{magesan2013modeling,
+  title={Modeling quantum noise for efficient testing of fault-tolerant circuits},
+  author={Magesan, Easwar and Puzzuoli, Daniel and Granade, Christopher E and Cory, David G},
+  journal={Physical Review A—Atomic, Molecular, and Optical Physics},
+  volume={87},
+  number={1},
+  pages={012324},
+  year={2013},
+  publisher={APS}
+}
+@article{puzzuoli2014tractable,
+  title={Tractable simulation of error correction with honest approximations to realistic fault models},
+  author={Puzzuoli, Daniel and Granade, Christopher and Haas, Holger and Criger, Ben and Magesan, Easwar and Cory, David G},
+  journal={Physical Review A},
+  volume={89},
+  number={2},
+  pages={022306},
+  year={2014},
+  publisher={APS}
+}
+
+@article{gutierrez2013approximation,
+  title={Approximation of realistic errors by Clifford channels and Pauli measurements},
+  author={Guti{\'e}rrez, Mauricio and Svec, Lukas and Vargo, Alexander and Brown, Kenneth R},
+  journal={Physical Review A—Atomic, Molecular, and Optical Physics},
+  volume={87},
+  number={3},
+  pages={030302},
+  year={2013},
+  publisher={APS}
+}
+
+@article{jouzdani2014fidelity,
+  title={Fidelity threshold of the surface code beyond single-qubit error models},
+  author={Jouzdani, Pejman and Novais, E and Tupitsyn, IS and Mucciolo, Eduardo R},
+  journal={Physical Review A},
+  volume={90},
+  number={4},
+  pages={042315},
+  year={2014},
+  publisher={APS}
+}
+
+@article{Darmawan2017Tensor,
+  title = {Tensor-Network Simulations of the Surface Code under Realistic Noise},
+  author = {Darmawan, Andrew S. and Poulin, David},
+  journal = {Phys. Rev. Lett.},
+  volume = {119},
+  issue = {4},
+  pages = {040502},
+  numpages = {5},
+  year = {2017},
+  month = {Jul},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.119.040502},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.119.040502}
+}
+
+@article{Suzuki2017Efficient,
+  title = {Efficient Simulation of Quantum Error Correction Under Coherent Error Based on the Nonunitary Free-Fermionic Formalism},
+  author = {Suzuki, Yasunari and Fujii, Keisuke and Koashi, Masato},
+  journal = {Phys. Rev. Lett.},
+  volume = {119},
+  issue = {19},
+  pages = {190503},
+  numpages = {5},
+  year = {2017},
+  month = {Nov},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.119.190503},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.119.190503}
+}
+@article{greenbaum2017modeling,
+  title={Modeling coherent errors in quantum error correction},
+  author={Greenbaum, Daniel and Dutton, Zachary},
+  journal={Quantum Science and Technology},
+  volume={3},
+  number={1},
+  pages={015007},
+  year={2017},
+  publisher={IOP Publishing}
+}
+@article{bravyi2018correcting,
+  title={Correcting coherent errors with surface codes},
+  author={Bravyi, Sergey and Englbrecht, Matthias and K{\"o}nig, Robert and Peard, Nolan},
+  journal={npj Quantum Information},
+  volume={4},
+  number={1},
+  pages={55},
+  year={2018},
+  publisher={Nature Publishing Group UK London}
+}
+
+@article{beale2018coherence,
+  title={Coherence in quantum error-correcting codes},
+  author={Beale, Stefanie J and Wallman, Joel J and Guti{\'e}rrez, Mauricio and Brown, Kenneth R and Laflamme, Raymond},
+  journal={arXiv preprint arXiv:1805.08802},
+  year={2018}
+}
+
+@article{huang2019performance,
+  title = {Performance of quantum error correction with coherent errors},
+  author = {Huang, Eric and Doherty, Andrew C. and Flammia, Steven},
+  journal = {Phys. Rev. A},
+  volume = {99},
+  issue = {2},
+  pages = {022313},
+  numpages = {17},
+  year = {2019},
+  month = {Feb},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevA.99.022313},
+  url = {https://link.aps.org/doi/10.1103/PhysRevA.99.022313}
+}
+
+@article{iverson2020coherence,
+  title={Coherence in logical quantum channels},
+  author={Iverson, Joseph K and Preskill, John},
+  journal={New Journal of Physics},
+  volume={22},
+  number={7},
+  pages={073066},
+  year={2020},
+  publisher={IOP Publishing}
+}
+
+@article{venn2020error,
+  title = {Error-correction and noise-decoherence thresholds for coherent errors in planar-graph surface codes},
+  author = {Venn, F. and B\'eri, B.},
+  journal = {Phys. Rev. Res.},
+  volume = {2},
+  issue = {4},
+  pages = {043412},
+  numpages = {15},
+  year = {2020},
+  month = {Dec},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevResearch.2.043412},
+  url = {https://link.aps.org/doi/10.1103/PhysRevResearch.2.043412}
+}
+
+@article{Hakkaku2021Sampling,
+  title = {Sampling-based quasiprobability simulation for fault-tolerant quantum error correction on the surface codes under coherent noise},
+  author = {Hakkaku, Shigeo and Mitarai, Kosuke and Fujii, Keisuke},
+  journal = {Phys. Rev. Res.},
+  volume = {3},
+  issue = {4},
+  pages = {043130},
+  numpages = {5},
+  year = {2021},
+  month = {Nov},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevResearch.3.043130},
+  url = {https://link.aps.org/doi/10.1103/PhysRevResearch.3.043130}
+}
+
+@article{zhao2021analytic,
+  title={An analytic study of the independent coherent errors in the surface code},
+  author={Zhao, Yuanchen and Liu, Dong E},
+  journal={arXiv preprint arXiv:2112.00473},
+  year={2021}
+}
+
+@article{venn2023coherent,
+  title={Coherent-error threshold for surface codes from majorana delocalization},
+  author={Venn, Florian and Behrends, Jan and B{\'e}ri, Benjamin},
+  journal={Physical Review Letters},
+  volume={131},
+  number={6},
+  pages={060603},
+  year={2023},
+  publisher={APS}
+}
+
+@article{hashim2022benchmarking,
+  title={Benchmarking quantum logic operations for achieving fault tolerance},
+  author={Hashim, Akel and Seritan, Stefan and Proctor, Timothy and Rudinger, Kenneth and Goss, Noah and Naik, Ravi K and Kreikebaum, John Mark and Santiago, David I and Siddiqi, Irfan},
+  journal={arXiv preprint arXiv:2207.08786},
+  year={2022}
+}
+
+@article{pataki2024coherent,
+  title={Coherent errors in stabilizer codes caused by quasistatic phase damping},
+  author={Pataki, David and Marton, Aron and Asboth, Janos K and Palyi, Andras},
+  journal={arXiv preprint arXiv:2401.04530},
+  year={2024}
+}
+
+@article{Behrends2024Surface,
+  title = {Surface codes, quantum circuits, and entanglement phases},
+  author = {Behrends, Jan and Venn, Florian and B\'eri, Benjamin},
+  journal = {Phys. Rev. Res.},
+  volume = {6},
+  issue = {1},
+  pages = {013137},
+  numpages = {15},
+  year = {2024},
+  month = {Feb},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevResearch.6.013137},
+  url = {https://link.aps.org/doi/10.1103/PhysRevResearch.6.013137}
+}
+
+@article{Kueng2016Comparing,
+  title = {Comparing Experiments to the Fault-Tolerance Threshold},
+  author = {Kueng, Richard and Long, David M. and Doherty, Andrew C. and Flammia, Steven T.},
+  journal = {Phys. Rev. Lett.},
+  volume = {117},
+  issue = {17},
+  pages = {170502},
+  numpages = {6},
+  year = {2016},
+  month = {Oct},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.117.170502},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.117.170502}
+}
+
+@article{aliferis2005quantum,
+  title={Quantum accuracy threshold for concatenated distance-3 codes},
+  author={Aliferis, Panos and Gottesman, Daniel and Preskill, John},
+  journal={arXiv preprint quant-ph/0504218},
+  year={2005}
+}
+
+@article{Beale2020EfficientlyCL,
+  title={Efficiently computing logical noise in quantum error-correcting codes},
+  author={Stefanie J. Beale and Joel J. Wallman},
+  journal={Physical Review A},
+  year={2020},
+  url={https://api.semanticscholar.org/CorpusID:214623003}
+}
+@article{Wagner2023,
+  title = {Learning Logical Pauli Noise in Quantum Error Correction},
+  author = {Wagner, Thomas and Kampermann, Hermann and Bru\ss{}, Dagmar and Kliesch, Martin},
+  journal = {Phys. Rev. Lett.},
+  volume = {130},
+  issue = {20},
+  pages = {200601},
+  numpages = {7},
+  year = {2023},
+  month = {May},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.130.200601},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.130.200601}
+}
+@article{liu2023exact,
+  title={Exact performance of the five-qubit code with coherent errors},
+  author={Liu, Chaobin},
+  journal={Quantum Information Processing},
+  volume={22},
+  number={8},
+  pages={321},
+  year={2023},
+  publisher={Springer}
+}
+@article{Dennis2001TopologicalQM,
+  title={Topological quantum memory},
+  author={Eric Dennis and Alexei Y. Kitaev and Andrew J. Landahl and John Preskill},
+  journal={Journal of Mathematical Physics},
+  year={2001},
+  volume={43},
+  pages={4452-4505},
+  url={https://api.semanticscholar.org/CorpusID:36673677}
+}
+@article{Wang2002ConfinementHT,
+  title={Confinement Higgs transition in a disordered gauge theory and the accuracy threshold for quantum memory},
+  author={Chenyang Wang and James William Harrington and John Preskill},
+  journal={Annals of Physics},
+  year={2002},
+  volume={303},
+  pages={31-58},
+  url={https://api.semanticscholar.org/CorpusID:16383845}
+}
+
+@article{Katzgraber2009ErrorTF,
+  title={Error threshold for color codes and random three-body Ising models.},
+  author={Helmut G. Katzgraber and H. Bombin and Miguel A. Martin-Delgado},
+  journal={Physical review letters},
+  year={2009},
+  volume={103 9},
+  pages={
+          090501
+        },
+  url={https://api.semanticscholar.org/CorpusID:22791566}
+}
+
+@article{Chubb2018StatisticalMM,
+  title={Statistical mechanical models for quantum codes with correlated noise},
+  author={Christopher T. Chubb and Steven T. Flammia},
+  journal={arXiv: Quantum Physics},
+  year={2018},
+  url={https://api.semanticscholar.org/CorpusID:92983782}
+}
