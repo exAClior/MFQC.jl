@@ -20,6 +20,8 @@ makedocs(;
         "Home" => "index.md",
         "Measurement-Free Scheme" => "schemes.md",
         "Noise Model" => "noise.md",
+        "FLO method" => "flo.md",
+        "Effective Dyanmics method" => "ptm.md",
         "Glossary" => "glossary.md",
         "Suggested Readings and References" => "reference.md"
     ],
