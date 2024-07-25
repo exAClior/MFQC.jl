@@ -21,6 +21,7 @@ makedocs(;
         "Measurement-Free Scheme" => "schemes.md",
         "Noise Model" => "noise.md",
         "FLO method" => "flo.md",
+        "Ising Model Method" => "ising.md",
         "Effective Dyanmics method" => "ptm.md",
         "Glossary" => "glossary.md",
         "Suggested Readings and References" => "reference.md"
